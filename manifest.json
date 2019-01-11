@@ -2,6 +2,7 @@
 	"manifest_version": 2,
     "name": "인아웃",
     "version": "1.0.0",
+    "description":"이용약관 확인 도우미, 가입 사이트 관리",
     "default_locales": "ko",
 
     "sidebar_action": {
