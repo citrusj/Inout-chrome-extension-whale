@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<title>설정</title>
+	<meta charset="UTF-8">
+	<script src="setting.js"></script><!--setting.js -->
+	<link rel="stylesheet" href="setting.css" /><!--setting.css -->
+	<link rel="stylesheet" href="home.css" />
+</head>
+<body id="setting">
+<header style="background-color: transparent;">
+	<h1><a href="home.html"><img src="back.png" alt="돌아가기" title="돌아가기" width=25px></a> &nbsp;&nbsp;&nbsp;설정 <h1>
+</header>
+<contents>
+	<div id="highlightSetting">
+		<div class="subjectBox">
+			<img class="subjectIcon"src="highlightpen.png" height="27px">
+			<subject class="subject2" style="border-bottom:none;">이용약관 하이라이트 단어 추가</subject>
+		</div>
+		<div style="margin-top:0;">
+			<textarea id="textareaKeywords" rows="4"></textarea ><br>
+			<input id="colorBackground" type="color" value="#FBC0E4" style="border:0 solid #EAEDED; background: transparent; width:26px; height: 26px; float:left;"/><p>*쉼표로 구분*</p>
+			<button id="buttonSave" type="submit" style="border:0.8px solid #c1c7c7; background: transparent; cursor: pointer;">저장</button> 
+		</div>
+	</div>
+	<div id="TermSetting">
+		<div class="subjectBox">
+			<img class="subjectIcon" src="threeO.png" height="26px">
+			<subject class="subject2" style="border-bottom:none;">탈퇴권유 기준 변경</subject>
+		</div>
+  <!-- Drop-down selector example -->
+    <select id="setting_last"style="cursor: pointer;">
+      <option selected value="15778458000" disabled >마지막 접속</option>
+      <option value="2629743000">한달 전</option>
+      <option value="15778458000">6개월 전</option>
+      <option value="31556926000 ">1년 전</option>
+      <option value="94670778000">3년 전</option>
+      <option value="157784630000">5년 전</option>
+    </select>
+    <select id="setting_count" style="cursor: pointer;">
+      <option selected value="10" disabled>이용 횟수</option>
+      <option value="5">5회 미만</option>
+      <option value="10">10회 미만</option>
+      <option value="30">30회 미만</option>
+    </select>
+   
+    <button id="settingSave", type="submit" style="border:0.8px solid #c1c7c7; background: transparent; cursor: pointer;">저장</button>   
+    <br><br><br><br>
+
+    <div id="ShowList">
+	    <img class="documentIcon"src="documenticon.png" height="27px">
+	    <subject class="subject2" style="border-bottom:none;">전체 사이트 목록</subject>
+	    <table rows=4 cols=4 align=center width="100%"style="border-bottom: solid #EAEDED ;">
+				<thead>
+					<tr>
+						<th></th><th width=50px>이용횟수</th>
+						<th width =103>사이트</th><th width=88px style="padding-right: 7px;">마지막접속</th>
+						<th width=50px>탈퇴링크</th>
+					</tr>
+				</thead>
+				<tbody id="rowBody">
+
+	    		</tbody>
+	    	</table>
+	   </div>
+
+</div>
+
+
+
+</contents>
+</body>
+</html>
+
+

@@ -2,8 +2,53 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		 <script src="Chart.js"></script>
+		 <script src="home.js"></script>
+		 <link rel="stylesheet" type="text/css" href="home.css">
+		 <script src="script.js"></script>
 	</head>
 	<body>
-		<h1>인아웃</h1>
+		<header>
+			<img id="icon" src="icon.png" height="48px">
+			<h2>가입과 탈퇴사이,</h2>&nbsp;<h1>인아웃</h1>
+			<a id="settingicon" href="setting.html"><img src="settingicon.png" alt="설정" title="설정" height="30px"></a>
+		</header>
+		<contents>
+		<subject>회원가입을 하고 있다면?</subject>
+		<div id="termButton"><div id="startHighlight">이용약관 확인 도우미</div>
+		<input  type="image" src="highlightpen.png" name="Submit" alt="하이라이트" title="하이라이트(시작/종료)"" value="Submit" height="25px">
+		</div>
+		<subject>이 사이트, 이용하시나요?</subject>
+		<table rows=4 cols=4 align=center  width="100%" style="border-bottom: solid #EAEDED ;">
+			<thead>
+				<tr>
+					<th></th><th width=50px>이용횟수</th>
+					<th width =110>사이트</th><th width= 88px style="padding-right: 7px;">마지막접속</th>
+					<th width=50px>탈퇴링크</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id=row_1>
+				</tr>
+				<tr id=row_2>
+				</tr>
+				<tr id=row_3>
+				</tr>
+
+			</tbody>
+		</table>
+		<table>
+			<tr id=current>
+				</tr>
+		</table>
+		
+		<subject>나의 인터넷 이용 현황</subject>
+			<div id="chart_div" style="height:215px;width:215px;margin-left:65px">
+			<canvas id="myChart" width="50" height="50"></canvas>
+			</div>
+		</contents>
+		
+		
+		
 	</body>
 </html>
